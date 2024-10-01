@@ -105,7 +105,7 @@ uwall2: UPPER_WALLS ARG=no2 AT=0.15 KAPPA=10000.0
 uwallcv2: UPPER_WALLS ARG=cv2 AT=5.0 KAPPA=10000.0
 
 # Setup of the multiple walkers metadynamics simulations
-metad: METAD ARG=cv1,cv2 SIGMA=0.01,0.05 HEIGHT=5.0 PACE=200 TEMP=300.0 BIASFACTOR=15 GRID_MIN=0.00,0.00 GRID_MAX=0.5,6.0 CALC_RCT RCT_USTRIDE=10 WALKERS_N=__FILL__ WALKERS_ID=__FILL__ WALKERS_DIR=__FILL__ WALKERS_RSTRIDE=__FILL__
+metad: METAD ARG=cv1,cv2 SIGMA=0.01,0.05 HEIGHT=5.0 PACE=100 TEMP=300.0 BIASFACTOR=15 GRID_MIN=0.00,0.00 GRID_MAX=0.5,6.0 CALC_RCT RCT_USTRIDE=10 WALKERS_N=__FILL__ WALKERS_ID=__FILL__ WALKERS_DIR=__FILL__ WALKERS_RSTRIDE=__FILL__
 
 # Print out the CVs and biases on the fly
 PRINT ARG=cv1,uwallcv1.bias,cv2,uwallcv2.bias,no2_ang_deg,no1,uwall1.bias,no2,uwall2.bias,hbmat1.sum,hbmat2.sum,metad.bias,metad.rbias STRIDE=10 FILE=COLVAR
