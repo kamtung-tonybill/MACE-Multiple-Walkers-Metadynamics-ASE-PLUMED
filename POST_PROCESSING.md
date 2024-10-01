@@ -26,7 +26,7 @@ plumed driver --plumed plumed_reweight.dat --noatoms
 ```
 
 After reweighing all the walkers, you can combine all the histograms to calculate the free energy and the associated error. You can either do it using PLUMED or with the following Python script:
-```
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 import glob
