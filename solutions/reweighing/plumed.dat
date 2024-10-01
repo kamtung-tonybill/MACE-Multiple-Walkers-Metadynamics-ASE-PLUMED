@@ -1,7 +1,7 @@
 # Read the COLVAR file
 cv1: READ FILE=COLVAR IGNORE_TIME VALUES=cv1
 # Assume we want to reweigh the simulation on the number of H-bonds received by the NO2 fragment based on the H-bonds matrix
-cv2: READ FILE=COLVAR IGNORE_TIME VALUES=hmat2.sum
+cv2: READ FILE=COLVAR IGNORE_TIME VALUES=hbmat2.sum
 metad: READ FILE=COLVAR IGNORE_TIME VALUES=metad.rbias
 
 # Define weights
