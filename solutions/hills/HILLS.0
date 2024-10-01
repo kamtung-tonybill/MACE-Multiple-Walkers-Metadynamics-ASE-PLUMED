@@ -1,1 +1,4 @@
-
+# Gaussian hills deposited in walker-0 will deposited here
+#! FIELDS time cv1 cv2.sum sigma_cv1 sigma_cv2.sum height biasf clock
+#! SET multivariate false
+#! SET kerneltype stretched-gaussian
