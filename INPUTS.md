@@ -12,7 +12,7 @@ pip install -e .
 ```
 
 Once ASE is installed, you can run MD simulations with PLUMED with the following example Python script:
-```
+```python
 from ase import Atoms, units
 from ase.md.velocitydistribution import MaxwellBoltzmannDistribution
 from ase.md.bussi import Bussi
