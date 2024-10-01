@@ -71,7 +71,7 @@ write("mace_metad_restart.xyz", atoms, format='extxyz')
 
 As shown above, the PLUMED actions can be inputted explicitly in the Python script for the ASE input:
 ```plumed
-#SOLUTIONFILE=./solutions/walker-0/plumed.dat
+#SOLUTIONFILE=plumed-walker-0.dat
 
 # Default units in PLUMED
 UNITS LENGTH=__FILL__ TIME=__FILL__ ENERGY=__FILL__
