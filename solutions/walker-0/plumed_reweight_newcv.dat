@@ -8,6 +8,6 @@ metad: READ FILE=COLVAR IGNORE_TIME VALUES=metad.rbias
 weights: REWEIGHT_METAD TEMP=300
 
 # Calculate histograms
-# Assume the errors converge at a block size of 25 ps
-hh: HISTOGRAM ARG=cv1,cv2.sum GRID_MIN=0.1,0.0 GRID_MAX=0.4,5.0 GRID_BIN=255,255 BANDWIDTH=0.01,0.05 LOGWEIGHTS=weights NORMALIZATION=true CLEAR=5000
-DUMPGRID GRID=hh FILE=histogram.dat STRIDE=5000
+# Assume the errors converge at a block size of 50 ps
+hh: HISTOGRAM ARG=cv1,cv2.sum GRID_MIN=0.1,0.0 GRID_MAX=0.4,5.0 GRID_BIN=255,255 BANDWIDTH=0.01,0.05 LOGWEIGHTS=weights NORMALIZATION=true CLEAR=10000
+DUMPGRID GRID=hh FILE=histogram.dat STRIDE=10000
