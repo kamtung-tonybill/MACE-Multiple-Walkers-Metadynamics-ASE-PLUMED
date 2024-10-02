@@ -79,7 +79,7 @@ with open('fes-ferr-block-average.dat', 'w') as fout:
 
 Sometimes, you may want to reweigh the simulation on a different CV, which is not biased through the metadynamics simulation. In this case, you just need to modify the `plumed_reweight.dat` file to inform PLUMED tools to read a different CV column from the COLVAR file:
 ```plumed
-#SOLUTIONFILE=./solutions/reweighing/plumed_reweight.dat
+#SOLUTIONFILE=./solutions/reweighing/plumed_reweight_newcv.dat
 
 # Read the COLVAR file
 cv1: READ FILE=COLVAR IGNORE_TIME VALUES=cv1
