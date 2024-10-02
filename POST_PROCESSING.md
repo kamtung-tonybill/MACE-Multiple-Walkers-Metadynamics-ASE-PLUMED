@@ -8,6 +8,8 @@ You may have already been introduced to the two main routes of reweighing a meta
 
 To reweigh the frames from multiple walkers metadynamics simulations, you can perform the reweighing for each walker independently and then combine all the histograms to convert the free energy surface. You can construct a `plumed_reweight.dat` file for each walker as follows:
 ```plumed
+#SOLUTIONFILE=./solutions/reweighing/plumed_reweight.dat
+
 # Read the COLVAR file
 cv1: READ FILE=COLVAR IGNORE_TIME VALUES=cv1
 cv2: READ FILE=COLVAR IGNORE_TIME VALUES=cv2
